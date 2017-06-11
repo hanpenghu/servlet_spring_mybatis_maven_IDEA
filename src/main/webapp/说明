@@ -1,0 +1,11 @@
+在浏览器中输入Url
+http://localhost:8080/HelloServlet
+进行访问结果如下:
+Hello,Spring.Servlet
+/////////////////////////////////////////////////////////////////////////
+http://localhost:8080/HelloServlet1
+输出
+Hello,Spring.Servlet1
+/////////////////////////////////////////////////////////////////////////
+具体web.xml是怎样匹配servlet类的,只要看com.hanhan.test.HelloServlet和
+com.hanhan.test.HelloServlet1里面的注释就知道了
