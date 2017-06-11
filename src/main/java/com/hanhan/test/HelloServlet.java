@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import javax.annotation.Resource;
 import javax.servlet.ServletException;
+import javax.servlet.SingleThreadModel;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,8 +28,8 @@ import org.springframework.stereotype.Controller;
 //<url-pattern>/HelloServlet</url-pattern>
 //</servlet-mapping>
 @Scope("prototype")
-public class HelloServlet extends HttpServlet {
-
+public class HelloServlet extends HttpServlet implements SingleThreadModel {
+    //implements SingleThreadModel可以实现单线程,一次只能有一个线程走这个类
     private UserService userService;
 
     @Resource

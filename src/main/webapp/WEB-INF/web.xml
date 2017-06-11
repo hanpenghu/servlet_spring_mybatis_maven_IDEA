@@ -31,7 +31,7 @@
         <url-pattern>/HelloServlet</url-pattern>
     </servlet-mapping>
 
-    <!-- Servlet 1-->
+    <!-- Servlet 1,这样配置多个代理类(一个servlet对应一个新new的ServletToBeanProxy),就线程安全了-->
     <servlet>
         <servlet-name>helloServlet1</servlet-name>
         <servlet-class>com.hanhan.test.ServletToBeanProxy</servlet-class>
