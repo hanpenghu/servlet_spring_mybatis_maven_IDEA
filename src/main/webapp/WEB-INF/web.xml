@@ -22,7 +22,7 @@
 
     <!-- Servlet -->
     <servlet>
-        <servlet-name>helloServlet</servlet-name>
+        <servlet-name>helloServlet</servlet-name><!--让代理来代理HelloServlet-->
         <servlet-class>com.hanhan.test.ServletToBeanProxy</servlet-class>
     </servlet>
 
@@ -33,7 +33,7 @@
 
     <!-- Servlet 1,这样配置多个代理类(一个servlet对应一个新new的ServletToBeanProxy),就线程安全了-->
     <servlet>
-        <servlet-name>helloServlet1</servlet-name>
+        <servlet-name>helloServlet1</servlet-name><!--让代理来代理HelloServlet1-->
         <servlet-class>com.hanhan.test.ServletToBeanProxy</servlet-class>
     </servlet>
 
