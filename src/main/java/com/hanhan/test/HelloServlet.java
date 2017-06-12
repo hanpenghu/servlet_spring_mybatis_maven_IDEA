@@ -27,8 +27,8 @@ import org.springframework.stereotype.Controller;
 //<servlet-name>helloServlet</servlet-name>
 //<url-pattern>/HelloServlet</url-pattern>
 //</servlet-mapping>
-@Scope("prototype")
-public class HelloServlet extends HttpServlet implements SingleThreadModel {
+@Scope("prototype")//多例模式的标志,不会出现线程问题
+public class HelloServlet extends HttpServlet {
     //implements SingleThreadModel可以实现单线程,一次只能有一个线程走这个类
     private UserService userService;
 

@@ -33,6 +33,7 @@
 
     <!-- Servlet 1,这样配置多个代理类(一个servlet对应一个新new的ServletToBeanProxy),就线程安全了-->
     <servlet>
+        <!-- 这里的<servlet-name>的内容必须是把对应的servlet第一个字母小写,才能对应到该servlet-->
         <servlet-name>helloServlet1</servlet-name><!--让代理来代理HelloServlet1-->
         <servlet-class>com.hanhan.test.ServletToBeanProxy</servlet-class>
     </servlet>

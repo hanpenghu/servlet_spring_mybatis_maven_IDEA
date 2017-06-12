@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-servlet-Spring
+servlet-Spring-test
 </body>
 </html>
