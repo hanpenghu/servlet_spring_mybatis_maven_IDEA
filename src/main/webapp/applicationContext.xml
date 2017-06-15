@@ -32,7 +32,7 @@ http://www.springframework.org/schema/jdbc "
 
     <context:annotation-config></context:annotation-config>
     <context:component-scan base-package="com.hanhan.test"></context:component-scan>
-    <bean id="beanC" class="com.hanhan.test.BeanC"/>
+    <!--<bean id="beanC" class="com.hanhan.test.BeanC"/>-->
     <task:scheduler id="myScheduler" pool-size="10"/>
     <task:scheduled-tasks scheduler="myScheduler">
         <!--<task:scheduled ref="beanA" method="methodA" fixed-delay="5000" initial-delay="1000"/>
